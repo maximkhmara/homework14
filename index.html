@@ -7,16 +7,57 @@
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-		<main class="login-main">
-			<div class="loader">
-				<div class="cup">
-					<div class="handle"></div>
+		<main class="main">
+			<div class="shop-product">
+				<div class="shop-product-image">
+					<img src="/img/1.jpg" alt="i" />
+				</div>
+				<div class="shop-product-rigth">
+					<div class="shop-product-name">MacBook Pro 16″ M3 Pro</div>
+					<div class="shop-product-buy">buy</div>
 				</div>
 			</div>
-			<form action="" class="login-form">
-				<input class="login-email" type="text" placeholder="Email" />
-				<input class="login-pass" type="password" placeholder="Password" />
-				<button class="login-btn disable">Login</button>
+			<form action="" class="buy-form">
+				<div class="buy-form-input">
+					<input type="text" placeholder="ПІБ" name="name" />
+					<div class="buy-form-input-error-text">Заповніть поле</div>
+				</div>
+				<select name="buy-select" id="buy-select">
+					<option value="виберіть місто" disabled selected>
+						оберіть місто
+					</option>
+					<option value="Київ">Київ</option>
+					<option value="Харків">Харків</option>
+					<option value="Одеса">Одеса</option>
+					<option value="Дніпро">Дніпро</option>
+					<option value="Донецьк">Донецьк</option>
+					<option value="Запоріжжя">Запоріжжя</option>
+					<option value="Львів">Львів</option>
+					<option value="Кривий Ріг">Кривий Ріг</option>
+					<option value="Миколаїв">Миколаїв</option>
+					<option value="Маріуполь">Маріуполь</option>
+				</select>
+				<div class="buy-form-input">
+					<input type="text" placeholder="ПІБ" name="branch" />
+					<div class="buy-form-input-error-text">Заповніть поле</div>
+				</div>
+				<div class="buy-form-radio">
+					<lable>
+						Післяплати
+						<input type="radio" name="pay" value="postpaid" /> </lable
+					><br />
+					<lable>
+						Оплата банківською карткою
+						<input type="radio" name="pay" value="card" />
+					</lable>
+				</div>
+				<div class="buy-form-input">
+					<input type="text" placeholder="ПІБ" name="quantity" />
+					<div class="buy-form-input-error-text">Заповніть поле</div>
+				</div>
+				<div class="buy-textarea">
+					<textarea name="comment" id="textarea-comment"> </textarea>
+				</div>
 			</form>
 		</main>
 	</body>
