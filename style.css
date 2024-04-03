@@ -7,6 +7,20 @@ body {
   font-family: Helvetica;
 }
 
+select {
+  height: 48px;
+  border: 1px solid rgba(38, 40, 54, .2);
+  border-radius: 8px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 1rem;
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #373f51;
+  border: 1px solid #cacfd3;
+  border-radius: 4px;
+}
+
 .main {
   width: 100%;
   padding: 80px 40px;
@@ -16,6 +30,9 @@ body {
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
+}
+.shop-product.hide {
+  display: none;
 }
 .shop-product-image {
   margin-right: 40px;
@@ -43,8 +60,98 @@ body {
   text-transform: uppercase;
 }
 .buy-form {
+  width: 532px;
+  display: none;
+}
+.buy-form.show {
+  display: block;
 }
 .buy-form-input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.field-wpapper {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.field-wpapper.error .buy-form-input-error-text{
+  display: block;
+}
+input[type="radio"] {
+  margin-bottom: 20px;
+}
+.buy-form-input input {
+  height: 48px;
+  border: 1px solid rgba(38, 40, 54, .2);
+  border-radius: 8px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 1rem;
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #373f51;
+  border: 1px solid #cacfd3;
+  border-radius: 4px;
 }
 .buy-form-input-error-text {
+  position: absolute;
+  left: 15px;
+  bottom: -19px;
+  color: rgb(242, 70, 70);
+  font-size: 14px;
+  display: none;
+}
+
+textarea {
+  height: 100px;
+  border: 1px solid rgba(38, 40, 54, .2);
+  border-radius: 8px;
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #373f51;
+  border: 1px solid #cacfd3;
+  border-radius: 4px; 
+  resize: none;
+  padding: 15px;
+  text-align: left;
+}
+
+.form-submit-btn {
+  cursor: pointer;
+  margin-top: 30px;
+  cursor: pointer;
+  background: linear-gradient(240deg, #19748e 13.4%, #1652c3 86.6%);
+  box-shadow: 0 0 1px rgba(43,43,51,.4), 0 2px 4px rgba(43,43,51,.1);
+  width: fit-content;
+  height: 55px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 6px 20px;
+}
+.order {
+  display: none;
+}
+.order.show {
+  display: block;
+}
+.order-title {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+.order-content {
+  font-size: 20px;
+}
+.order-content div{
+  margin-bottom: 15px;
 }
